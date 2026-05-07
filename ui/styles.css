@@ -1,0 +1,70 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 13px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 22px;
+  letter-spacing: 0.25em;
+  color: #C8A96E;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 28px 36px;
+  border: 1px solid #2a2a2a;
+  background: #111;
+}
+
+#status {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #555;
+}
+
+#status.ok { color: #5A9ED4; }
+
+button {
+  background: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  color: #e0e0e0;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  padding: 9px 24px;
+  cursor: pointer;
+}
+
+button:hover { border-color: #C8A96E; color: #C8A96E; }
+
+#response {
+  min-height: 1.4em;
+  color: #C8A96E;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
