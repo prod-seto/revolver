@@ -7,7 +7,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 40px 20px;
   font-size: 13px;
 }
 
@@ -15,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 h1 {
@@ -30,13 +31,13 @@ h1 {
   letter-spacing: 0.15em;
 }
 
+/* Ping card */
 #card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  margin-top: 16px;
-  padding: 28px 36px;
+  padding: 24px 36px;
   border: 1px solid #2a2a2a;
   background: #111;
 }
@@ -46,7 +47,6 @@ h1 {
   letter-spacing: 0.1em;
   color: #555;
 }
-
 #status.ok { color: #5A9ED4; }
 
 button {
@@ -59,7 +59,6 @@ button {
   padding: 9px 24px;
   cursor: pointer;
 }
-
 button:hover { border-color: #C8A96E; color: #C8A96E; }
 
 #response {
@@ -68,3 +67,42 @@ button:hover { border-color: #C8A96E; color: #C8A96E; }
   font-size: 12px;
   letter-spacing: 0.05em;
 }
+
+/* Keyboard section */
+#keyboard-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#audio-status {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #555;
+}
+#audio-status.ok { color: #5A9ED4; }
+
+/* Piano keys */
+.key {
+  cursor: pointer;
+  top: 0;
+}
+
+.white-key {
+  background: #d0d0d0;
+  border: 1px solid #555;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+}
+.white-key:hover  { background: #e0e0e0; }
+.white-key.active { background: #C8A96E; }
+
+.black-key {
+  background: #1e1e1e;
+  border: 1px solid #555;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+}
+.black-key:hover  { background: #333; }
+.black-key.active { background: #7a6040; }

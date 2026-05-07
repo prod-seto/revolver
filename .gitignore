@@ -2,3 +2,6 @@ build/
 ui/node_modules/
 ui/dist/
 *.DS_Store
+samples/*.wav
+samples/*.aif
+samples/*.aiff

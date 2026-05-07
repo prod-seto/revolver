@@ -88,6 +88,7 @@ juce_add_console_app(WebPlugServer PRODUCT_NAME "WebPlugServer")
 juce_generate_juce_header(WebPlugServer)
 
 target_sources(WebPlugServer PRIVATE
+    source/AudioEngine.cpp
     source/DevServer.cpp
     source/ServerMain.cpp
 )
@@ -108,6 +109,9 @@ target_compile_options(WebPlugServer PRIVATE
 )
 
 target_link_libraries(WebPlugServer PRIVATE
+    juce::juce_audio_basics
+    juce::juce_audio_devices
+    juce::juce_audio_formats
     juce::juce_core
     juce::juce_data_structures
     juce::juce_events
