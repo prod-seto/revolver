@@ -27,8 +27,8 @@ The `bridge.js` file auto-detects which transport to use at runtime.
 ## Getting started
 
 ```bash
-git clone <repo-url>
-cd webplug
+git clone <repo-url> your-plugin-name
+cd your-plugin-name
 
 # Build everything (first time takes a few minutes, downloads JUCE via FetchContent)
 ./scripts/build.sh
